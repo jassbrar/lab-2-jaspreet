@@ -50,8 +50,8 @@ namespace MvcMusicStore_F2017
 
             // Uncomment the following lines to enable logging in with third party login providers
             app.UseMicrosoftAccountAuthentication(
-                clientId: "ef482329-1390-4673-b580-c3cd002768ca",
-                clientSecret: "cyTQUC88_bxjhfHAD228$+@");
+                clientId: ConfigurationManager.AppSettings["microsoftClientId"],
+                clientSecret: ConfigurationManager.AppSettings["microsoftClientSecret"]);
 
             //app.UseTwitterAuthentication(
             //   consumerKey: "",
